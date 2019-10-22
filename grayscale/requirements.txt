@@ -1,0 +1,15 @@
+keras
+opencv-python
+pandas
+seaborn
+sklearn
+tensorflow-gpu
+jupyter
+
+
+
+
+
+
+
+
