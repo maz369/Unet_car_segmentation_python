@@ -1,9 +1,8 @@
 # Unet_car_segmentation_python
 
+This repository contains python implementation of U-net network for car segmentation in 2D based on grayscale or RGB color images. The training and test dataset are from carvana Kaggel challenge (144 images and 144 masks). The model has been tested on Linux and Windows 10.
 
-This repository contains ipython implementation of U-net network for car segmentation in 2D based on grayscale or RGB color images. The training and test dataset are from carvana Kaggel challenge (144 images and 144 masks). The model has been tested on Linux and Windows 10.
-
-This implementation is based on Keras with Tensorflow backend. It has been tested on Python 3.6, Anaconda (4.7). The uplaoded code requires a GPU but if you do not have one, simply uninstall tensorflow-gpu (pip uninstall tensorflow-gpu), then install regular tensorflow (pip install tensorflow) and the code will work.
+This implementation is based on Keras with Tensorflow backend. It has been tested on Python 3.6, Anaconda (4.7). The uploaded code requires a GPU but if you do not have one, simply uninstall tensorflow-gpu (pip uninstall tensorflow-gpu), then install regular tensorflow (pip install tensorflow) and the code will work.
 
 This can serve as an example for learning to:
 
@@ -15,18 +14,26 @@ This can serve as an example for learning to:
 
     Perform 2D segmentation with other datasets
 
-Test
+# Test
 
-    Unzip data folder
+    Unzip data folder to where python codes are located
     Create a virtual environment with Anaconda: conda create -n DL_example python=3.6
     Activate the environment: activate DL_example
     Change directory to where you cloned the current files: cd ./where files are downloaded
     Install required libraries: pip install requirements.txt
+    
+    **python main.py -im_h 64 -im_w 64 -batch_size=5 -epoch=50**
 
-To test the notebook version, type the following in the command line: jupyter notebook This will open the notebook which will allow you to run either the grayscale (car_segmentation_Unet_grayscale.ipynb) or RGB (car_segmentation_Unet_rgb.ipynb) version of the code. You should be able to run each cell and get the result.
-Reference
+The last command will run the network and save learning curve and example prediction result into the main folder. 
+Weights will be also saved. Providing flags is not necessary. In case no flag is provided (python main.py), default values in the above command will be used to train the network. Higher resolution and larger number of epochs will improve accuracy of the result.
+
+Note there are 2 folders, one for grayscale (grayscale) and the other for color (rgb) training. The network used in these 2 examples is the same and the only difference is the size of image (Grayscale or RGB) and the size of input and output tensor of the network. I thought it would be useful to have both examples for the same dataset to better understand the differences.
+
+
+# Reference
 
 Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. "U-net: Convolutional networks for biomedical image segmentation." In International Conference on Medical image computing and computer-assisted intervention, pp. 234-241. Springer, Cham, 2015.
 License
 
+# License
 The code comes "AS IS" with no warranty of any kind. It can be used for any educational and research purpose. Feel free to modify and/or redistribute.
