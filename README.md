@@ -27,7 +27,7 @@ This can serve as an example for learning to:
 The last command will run the network and save learning curve and example prediction result into the main folder. 
 Weights will be also saved. Providing flags is not necessary. In case no flag is provided (python main.py), default values in the above command will be used to train the network. Higher resolution and larger number of epochs will improve accuracy of the result.
 
-Note there are 2 folders, one for grayscale (grayscale) and the other for color (rgb) training. The network used in these 2 examples is the same and the only difference is the size of image (Grayscale or RGB) and the size of input and output tensor of the network. I thought it would be useful to have both examples for the same dataset to better understand the differences.
+Note there are 2 folders, one for grayscale (grayscale) and the other for color (rgb) training. The network used in these 2 examples is the same and the only difference is the size of image (Grayscale or RGB) and the size of input and output tensor of the network. I thought it would be useful to have both examples for the same dataset to better understand the differences. I have made each folder self-sufficient and independent of the other one.
 
 
 # Reference
