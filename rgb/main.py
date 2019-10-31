@@ -47,7 +47,7 @@ X_train, X_valid, y_train, y_valid = train_test_split(imgs_np, masks_np, test_si
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 callbacks = [EarlyStopping(patience=10, verbose=1),
     ReduceLROnPlateau(factor=0.1, patience=10, min_lr=0.00001, verbose=1),
-    ModelCheckpoint('model-car_segmentation.h5', verbose=1, save_best_only=True, save_weights_only=True)]
+    ModelCheckpoint('model-car_segmentation.h5', monitor='val_acc', verbose=1, save_best_only=False, save_weights_only=True)]
 	
 	
 # select input size and model parameters. We used keras built-in binary crossentropy loss
@@ -58,7 +58,7 @@ model.summary()
 
 
 # train the model, select batch size and number of epoches
-results = model.fit(X_train, y_train, batch_size, epochs, verbose=2, callbacks=None,
+results = model.fit(X_train, y_train, batch_size, epochs, verbose=2, callbacks=callbacks,
                     validation_data=(X_valid, y_valid))
 					
 					
