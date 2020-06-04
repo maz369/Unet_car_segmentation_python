@@ -62,7 +62,6 @@ def load_image(im_height=64, im_width=64):
 		new_mask = cv2.resize(mask_array, (im_height, im_width))
 		masks.append(new_mask)
 		
-		
 	# convert to numpy array
 	imgs_np = np.array(imgs, dtype=np.float32)
 	masks_np = np.array(masks, dtype=np.float32)
