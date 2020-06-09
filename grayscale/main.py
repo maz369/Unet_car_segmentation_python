@@ -15,12 +15,10 @@
 # maziyar.khansari@gmail.com
 #======================================================================================================
 
-
 # import required libraries
 from my_imports import *
 from pre_process import load_image
 from my_model import *
-
 
 
 # define flag for input image size
@@ -35,7 +33,6 @@ im_height = args.im_height
 im_width = args.im_width
 batch_size = args.batch_size
 epochs = args.num_epoch
-
 
 imgs_np, masks_np = load_image(im_height, im_width)
 print(imgs_np[0].shape)
@@ -61,8 +58,6 @@ model.summary()
 results = model.fit(X_train, y_train, batch_size, epochs, verbose=2, callbacks=callbacks,
                     validation_data=(X_valid, y_valid))
 					
-					
-					
 # plot training and validation loss, then highlight best model
 plt.figure(figsize=(8, 8))
 plt.title("Learning curve")
@@ -83,9 +78,8 @@ loss, acc =  model.evaluate(X_valid, y_valid, batch_size=30, verbose=1)
 print('Evaluation loss is equal to: {0:.2f}'.format(loss))
 print('Evaluation accuracy is equal to: {0:.2f}'.format(acc))
 
-
 # save sample prediction results# show examples from validation dataset
-rand_idx = random.choices(range(0,len(X_valid)), k=7)
+rand_idx = random.choices(range(0, len(X_valid)), k=7)
 
 for idx in rand_idx:
     fig, ax = plt.subplots(1, 3, figsize=(20, 10))
