@@ -23,6 +23,7 @@ This can serve as an example for gaining experience with the followings:
     Install required libraries: pip install requirements.txt
     
     python main.py -im_h 64 -im_w 64 -batch_size=5 -epoch=50
+    
 
 The last command will run the network and save learning curve and example prediction result into the main folder. 
 Weights will be also saved. Providing flags is not necessary. In case no flag is provided (python main.py), default values in the above command will be used to train the network. Higher resolution and larger number of epochs will improve accuracy of the result.
