@@ -34,7 +34,7 @@ Note there are 2 folders, one for grayscale (grayscale) and the other for color 
 # Reference
 
 Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. "U-net: Convolutional networks for biomedical image segmentation." In International Conference on Medical image computing and computer-assisted intervention, pp. 234-241. Springer, Cham, 2015.
-License
+License.
 
 # License
 The code comes "AS IS" with no warranty of any kind. It can be used for any educational and research purpose. Feel free to modify and/or redistribute.
