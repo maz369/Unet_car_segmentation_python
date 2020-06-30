@@ -1,6 +1,6 @@
 # Unet_car_segmentation_python
 
-This repository contains python implementation of U-net network for car segmentation in a 2D image (grayscale or RGB). The training and test dataset are from carvana Kaggel challenge (144 car images and 144 masks). The model has been tested on Linux and Windows 10.
+This repository contains python implementation of U-net network for car segmentation in 2D (grayscale or RGB). The training and test dataset are from carvana Kaggel challenge (144 car images and 144 masks). The model has been tested on Linux and Windows 10.
 
 This implementation is based on Keras with Tensorflow backend. It has been tested on Python 3.6, Anaconda (4.7). The uploaded code requires a GPU but if you do not have one, simply uninstall tensorflow-gpu (pip uninstall tensorflow-gpu), then install regular tensorflow (pip install tensorflow) and the code will work.
 
