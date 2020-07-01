@@ -28,7 +28,7 @@ def get_unet(input_img, n_filters=2, dropout=0.5, batchnorm=True):
     # contracting path (encoder)
     c1 = conv2d_block(input_img, n_filters=n_filters*1, kernel_size=3, batchnorm=batchnorm)
     p1 = MaxPooling2D((2, 2)) (c1)
-    p1 = Dropout(dropout*0.5)(p1)
+    p1 = Dropout(dropout * 0.5)(p1)
 
     c2 = conv2d_block(p1, n_filters=n_filters*2, kernel_size=3, batchnorm=batchnorm)
     p2 = MaxPooling2D((2, 2)) (c2)
