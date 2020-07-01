@@ -3,7 +3,6 @@ from my_imports import *
 
 
 # create csv file for the images and masks (this is just for reference)
-
 def load_image(im_height=64, im_width=64):
 
 	if not os.path.exists('image.csv'):
