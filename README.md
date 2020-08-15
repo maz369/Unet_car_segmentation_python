@@ -1,4 +1,4 @@
-# Unet_car_segmentation_python
+# Unet_car_segmentation_python 
 
 This repository contains python implementation of U-net network for car segmentation in 2D (grayscale or RGB). The training and test dataset are from carvana Kaggel challenge (144 car images and 144 masks). The model has been tested on Linux and Windows 10.
 
