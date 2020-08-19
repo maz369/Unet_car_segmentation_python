@@ -6,7 +6,7 @@ This implementation is based on Keras with Tensorflow backend. It has been teste
 
 This can serve as an example for gaining experience with the followings:
 
-    Train a network using your own images
+    Train a network using your own images 
 
     Learn the structure of Unet netwrok
 
