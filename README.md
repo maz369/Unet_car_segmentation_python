@@ -4,7 +4,7 @@ This repository contains python implementation of U-net network for car segmenta
 
 This implementation is based on Keras with Tensorflow backend. It has been tested on Python 3.6, Anaconda (4.7). The uploaded code requires a GPU but if you do not have one, simply uninstall tensorflow-gpu (pip uninstall tensorflow-gpu), then install regular tensorflow (pip install tensorflow) and the code will work.
 
-This can serve as an example for gaining experience with the followings: 
+This can serve as an example for gaining experience with the followings:  
 
     Train a network using your own images  
 
